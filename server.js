@@ -4,7 +4,7 @@ require('dotenv').config();
 // const { spokeitDigitalSignature } = require('./src/documentmerge/merge-document-to-pdf');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.service_port || 3000;
 const bodyParser = require('body-parser');
 // const { uploadPdfToGCS } = require('./google-cloud/storage');
 
