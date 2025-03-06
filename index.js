@@ -4,7 +4,7 @@ require('dotenv').config();
  
 
 const app = express();
-const port = process.env.service_port || 8080;
+const port = process.env.SERVICE_PORT || 8080;
 const bodyParser = require('body-parser');
 const { uploadPdfToGCS } = require('./storage');
 const { spokeitDigitalSignature } = require('./doc-gen');

@@ -1,11 +1,15 @@
 const { Storage } = require('@google-cloud/storage');
 const path = require('path');
 const fs = require('fs');
+require('dotenv').config();
 
-const bucketName = 'signature_pdf'; // Replace with your bucket name
+// Replace with your bucket name and service account key file path
+const bucketName = 'signature_pdf'; // Make sure this matches your actual bucket name
+const keyFilename = JSON.parse(process.env.CLOUD_STORAGE);
+const storage = new Storage({ credentials: keyFilename });
 
-// Initialize the Storage client WITHOUT keyFilename
-const storage = new Storage();
+// Initialize the Storage client
+ 
 const bucket = storage.bucket(bucketName);
 
 async function uploadPdfToGCS(pdfBuffer, fileName) {
