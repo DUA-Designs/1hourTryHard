@@ -40,7 +40,7 @@ app.post('/document-generation', async (req, res) => {
       photograph: signature,
     });
 
-    const fileName = `${name}-${Date.now()}.pdf`;
+    const fileName = `${name}-${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${new Date().getFullYear()}.pdf`;
     const gcsUrl = await uploadPdfToGCS(pdfBuffer, fileName);
 
     res.send(`Document generated and uploaded successfully to: ${gcsUrl}`);
