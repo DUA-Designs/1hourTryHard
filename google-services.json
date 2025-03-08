@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030130535694",
+    "project_id": "spokeit-9f532",
+    "storage_bucket": "spokeit-9f532.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030130535694:android:1d984de3f24b56f46e5b5f",
+        "android_client_info": {
+          "package_name": "com.SpokeIt.SpokeIt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK-c4W8am7goGZosVQtJTbqswKXCBUP7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
